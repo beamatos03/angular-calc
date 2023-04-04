@@ -1,0 +1,37 @@
+    <form action="">
+        <div class="row justify-content-center mt-3">
+            <input class="form-control form-control-sm m-1" type="number" name="num1" [(ngModel)]="num1"> 
+            <input class="form-control form-control-sm m-1" type="number" name="num2" [(ngModel)]="num2">
+        </div>
+
+        <div class="row mt-1">
+            <div class="col-md-4 mt-1">
+                <button class="btn btn-secondary" (click)="somar()">Somar</button>
+            </div>
+            <div class="col-md-4 mt-1">
+                <button class="btn btn-secondary" (click)="subtrair()">Subtrair</button>
+            </div>
+            <div class="col-md-4 mt-1">
+                <button class="btn btn-secondary" (click)="multiplicar()">Multiplicar</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mt-1">
+                <button class="btn btn-secondary" (click)="dividir()">Dividir</button>
+            </div>
+            <div class="col-md-4 mt-1">
+                <button class="btn btn-secondary" (click)="calcularResto()">Mod</button>
+            </div>
+            <div class="col-md-4 mt-1">
+                <button class="btn btn-outline-secondary" type="reset">C</button>
+            </div>
+        </div>        
+        <div class="row">
+            <div class="col-md-6">
+            <label class="mt-1">Resultado: </label> 
+            </div>
+            <div class="col-md-6">
+                <input class="form-control form-control-sm m-1 bg-secondary text-light" type="number" [value]="resultado" readonly>
+            </div>
+        </div>
+    </form>
